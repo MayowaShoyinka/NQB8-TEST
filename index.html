@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> NQB8 TEST </title>
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <span class="logo_name">Focus</span>
+      <p class="notification-badge">2</p>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-chat' ></i>
+            <span class="links_name">chats</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-list-ul' ></i>
+            <span class="links_name">Calender</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-envelop' ></i>
+            <span class="links_name">Email</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-user' ></i>
+            <span class="links_name">Profile</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+           <!--  <i class='bx bx-book-alt' ></i> -->
+           <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">widget</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="#">
+            <i class='bx bx-message' ></i>
+            <span class="links_name">Messages</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-heart' ></i>
+            <span class="links_name">Icons</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Setting</span>
+          </a>
+        </li>
+       
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+
+     
+    </nav>
+
+    <div class="home-content">
+      <div class="overview-boxes">
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Income Details</div>
+            <div class="number">$7800</div>
+          </div>
+          
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Sales</div>
+            <div class="number">38,876</div>
+            
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Profit</div>
+            <div class="number">$12,876</div>
+            
+          </div>
+        </div>
+        <div class="box">
+          <div class="right-side">
+            <div class="box-topic">Total Return</div>
+            <div class="number">11,086</div>   
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Sales Overview</div>
+          <div class="sales-details">
+
+          </div>
+        </div>
+        <div class="top-sales box">
+          <div class="title">Customers Feedback</div>
+          <ul class="top-sales-details">
+            
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
+
